@@ -53,7 +53,8 @@ def recommendation_prediction(buy_item_set):
 def main():
     st.title('Car insurance selling signal')
 
-    itm_list = ['60 TEATIME FAIRY CAKE CASES',
+    itm_list = ['No item',
+                '60 TEATIME FAIRY CAKE CASES',
                 '72 SWEETHEART FAIRY CAKE CASES',
                 '60 TEATIME FAIRY CAKE CASES',
                 'PACK OF 60 PINK PAISLEY CAKE CASES',
