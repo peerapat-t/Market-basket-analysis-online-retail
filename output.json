@@ -1,0 +1,110 @@
+[
+    {
+        "origin": [
+            "60 TEATIME FAIRY CAKE CASES"
+        ],
+        "destination": [
+            "72 SWEETHEART FAIRY CAKE CASES"
+        ],
+        "confidence": 0.3524590163934426
+    },
+    {
+        "origin": [
+            "72 SWEETHEART FAIRY CAKE CASES"
+        ],
+        "destination": [
+            "60 TEATIME FAIRY CAKE CASES"
+        ],
+        "confidence": 0.5411899313501144
+    },
+    {
+        "origin": [
+            "60 TEATIME FAIRY CAKE CASES"
+        ],
+        "destination": [
+            "PACK OF 60 PINK PAISLEY CAKE CASES"
+        ],
+        "confidence": 0.4433681073025335
+    },
+    {
+        "origin": [
+            "PACK OF 60 PINK PAISLEY CAKE CASES"
+        ],
+        "destination": [
+            "60 TEATIME FAIRY CAKE CASES"
+        ],
+        "confidence": 0.5129310344827587
+    },
+    {
+        "origin": [
+            "CHOCOLATE HOT WATER BOTTLE"
+        ],
+        "destination": [
+            "HOT WATER BOTTLE TEA AND SYMPATHY"
+        ],
+        "confidence": 0.5144694533762058
+    },
+    {
+        "origin": [
+            "HOT WATER BOTTLE TEA AND SYMPATHY"
+        ],
+        "destination": [
+            "CHOCOLATE HOT WATER BOTTLE"
+        ],
+        "confidence": 0.46875
+    },
+    {
+        "origin": [
+            "HOME BUILDING BLOCK WORD"
+        ],
+        "destination": [
+            "LOVE BUILDING BLOCK WORD"
+        ],
+        "confidence": 0.4377330350484713
+    },
+    {
+        "origin": [
+            "LOVE BUILDING BLOCK WORD"
+        ],
+        "destination": [
+            "HOME BUILDING BLOCK WORD"
+        ],
+        "confidence": 0.5321849501359928
+    },
+    {
+        "origin": [
+            "STRAWBERRY CERAMIC TRINKET BOX"
+        ],
+        "destination": [
+            "SWEETHEART CERAMIC TRINKET BOX"
+        ],
+        "confidence": 0.46293152235427276
+    },
+    {
+        "origin": [
+            "SWEETHEART CERAMIC TRINKET BOX"
+        ],
+        "destination": [
+            "STRAWBERRY CERAMIC TRINKET BOX"
+        ],
+        "confidence": 0.7827751196172249
+    },
+    {
+        "origin": [
+            "VINTAGE HEADS AND TAILS CARD GAME "
+        ],
+        "destination": [
+            "VINTAGE SNAP CARDS"
+        ],
+        "confidence": 0.5896414342629482
+    },
+    {
+        "origin": [
+            "VINTAGE SNAP CARDS"
+        ],
+        "destination": [
+            "VINTAGE HEADS AND TAILS CARD GAME "
+        ],
+        "confidence": 0.4396039603960396
+    }
+]
