@@ -55,7 +55,7 @@ def recommendation_prediction(buy_item_set):
 
 # %%
 def main():
-    st.title('Car insurance selling signal')
+    st.title('Online retail selling signal')
 
     item_list1 = ['No item',
                   '60 TEATIME FAIRY CAKE CASES',
@@ -105,13 +105,13 @@ def main():
 
     input_list = [item_option1, item_option2, item_option3]
     input_list = [x for x in input_list if x != 'No item']
-
     input_list = list(set(input_list))
 
     output = ''
+    prediction_result_df = []
+
     if st.button('Predict'):
         prediction_result_df = recommendation_prediction(input_list)
-
         if len(input_list) == 0:
             output = 'No recommendation'
         else:
