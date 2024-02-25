@@ -1,4 +1,8 @@
 # %%
+import warnings
+warnings.simplefilter("ignore")
+
+# %%
 import streamlit as st
 
 # %%
@@ -39,9 +43,7 @@ def recommendation_prediction(buy_item_set):
             })], ignore_index=True)
 
     df['count_destination'] = pd.to_numeric(df['count_destination'], errors='coerce')
-    # df = df.groupby(['origin', 'destination']).apply(lambda x: x.nlargest(1, 'confidence').nsmallest(1, 'count_destination')).reset_index(drop=True)
-    df = df.groupby(['origin', 'destination'], as_index=False).apply(lambda x: x.drop(['origin', 'destination'], axis=1).nlargest(1, 'confidence').nsmallest(1, 'count_destination')).reset_index(drop=True)
-
+    df = df.groupby(['origin', 'destination']).apply(lambda x: x.nlargest(1, 'confidence').nsmallest(1, 'count_destination')).reset_index(drop=True)
 
     # If still multiple rows exist, randomly select one
     if len(df) > 1:
