@@ -114,7 +114,7 @@ def main():
         prediction_result_df = recommendation_prediction(input_list)
         if len(input_list) == 0:
             output = 'No recommendation'
-        elif output.shape[0] == 0:
+        elif prediction_result_df.shape[0] == 0:
             output = 'No recommendation'
         else:
             output = recommendation_prediction(input_list)['destination'][0]
