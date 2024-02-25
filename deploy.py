@@ -57,28 +57,56 @@ def recommendation_prediction(buy_item_set):
 def main():
     st.title('Car insurance selling signal')
 
-    itm_list = ['No item',
-                '60 TEATIME FAIRY CAKE CASES',
-                '72 SWEETHEART FAIRY CAKE CASES',
-                '60 TEATIME FAIRY CAKE CASES',
-                'PACK OF 60 PINK PAISLEY CAKE CASES',
-                'CHOCOLATE HOT WATER BOTTLE',
-                'HOT WATER BOTTLE TEA AND SYMPATHY',
-                'HOME BUILDING BLOCK WORD',
-                'LOVE BUILDING BLOCK WORD',
-                'STRAWBERRY CERAMIC TRINKET BOX',
-                'SWEETHEART CERAMIC TRINKET BOX',
-                'VINTAGE HEADS AND TAILS CARD GAME',
-                'VINTAGE SNAP CARDS']
+    item_list1 = ['No item',
+                  '60 TEATIME FAIRY CAKE CASES',
+                  '72 SWEETHEART FAIRY CAKE CASES',
+                  '60 TEATIME FAIRY CAKE CASES',
+                  'PACK OF 60 PINK PAISLEY CAKE CASES',
+                  'CHOCOLATE HOT WATER BOTTLE',
+                  'HOT WATER BOTTLE TEA AND SYMPATHY',
+                  'HOME BUILDING BLOCK WORD',
+                  'LOVE BUILDING BLOCK WORD',
+                  'STRAWBERRY CERAMIC TRINKET BOX',
+                  'SWEETHEART CERAMIC TRINKET BOX',
+                  'VINTAGE HEADS AND TAILS CARD GAME',
+                  'VINTAGE SNAP CARDS']
+    
+    item_list2 = ['No item',
+                  '60 TEATIME FAIRY CAKE CASES',
+                  '72 SWEETHEART FAIRY CAKE CASES',
+                  '60 TEATIME FAIRY CAKE CASES',
+                  'PACK OF 60 PINK PAISLEY CAKE CASES',
+                  'CHOCOLATE HOT WATER BOTTLE',
+                  'HOT WATER BOTTLE TEA AND SYMPATHY',
+                  'HOME BUILDING BLOCK WORD',
+                  'LOVE BUILDING BLOCK WORD',
+                  'STRAWBERRY CERAMIC TRINKET BOX',
+                  'SWEETHEART CERAMIC TRINKET BOX',
+                  'VINTAGE HEADS AND TAILS CARD GAME',
+                  'VINTAGE SNAP CARDS']
 
-    item_option1 = st.selectbox("Item number 1:", itm_list, key='item_option1')
-    item_option2 = st.selectbox("Item number 2:", itm_list, key='item_option2')
-    item_option3 = st.selectbox("Item number 3:", itm_list, key='item_option3')
-    item_option4 = st.selectbox("Item number 4:", itm_list, key='item_option4')
-    item_option5 = st.selectbox("Item number 5:", itm_list, key='item_option5')
+    item_list3 = ['No item',
+                  '60 TEATIME FAIRY CAKE CASES',
+                  '72 SWEETHEART FAIRY CAKE CASES',
+                  '60 TEATIME FAIRY CAKE CASES',
+                  'PACK OF 60 PINK PAISLEY CAKE CASES',
+                  'CHOCOLATE HOT WATER BOTTLE',
+                  'HOT WATER BOTTLE TEA AND SYMPATHY',
+                  'HOME BUILDING BLOCK WORD',
+                  'LOVE BUILDING BLOCK WORD',
+                  'STRAWBERRY CERAMIC TRINKET BOX',
+                  'SWEETHEART CERAMIC TRINKET BOX',
+                  'VINTAGE HEADS AND TAILS CARD GAME',
+                  'VINTAGE SNAP CARDS']
 
-    input_list = [item_option1, item_option2, item_option3, item_option4, item_option5]
+    item_option1 = st.selectbox("Item number 1:", item_list1, key='item_option1')
+    item_option2 = st.selectbox("Item number 2:", item_list2, key='item_option2')
+    item_option3 = st.selectbox("Item number 3:", item_list3, key='item_option3')
+
+    input_list = [item_option1, item_option2, item_option3]
     input_list = [x for x in input_list if x != 'No item']
+
+    input_list = list(set(input_list))
 
     output = ''
     if st.button('Predict'):
