@@ -15,6 +15,10 @@ import json
 with open("output.json", "r") as json_file:
     recommendation_rule = json.load(json_file)
 
+# %%
+# for i in recommendation_rule:
+#     print(i['origin'][0])
+
 # %% [markdown]
 # # Create function
 
@@ -49,8 +53,7 @@ def recommendation_prediction(buy_item_set):
 def main():
     st.title('Car insurance selling signal')
 
-    itm_list = ['No item',
-                '60 TEATIME FAIRY CAKE CASES',
+    itm_list = ['60 TEATIME FAIRY CAKE CASES',
                 '72 SWEETHEART FAIRY CAKE CASES',
                 '60 TEATIME FAIRY CAKE CASES',
                 'PACK OF 60 PINK PAISLEY CAKE CASES',
@@ -61,7 +64,7 @@ def main():
                 'STRAWBERRY CERAMIC TRINKET BOX',
                 'SWEETHEART CERAMIC TRINKET BOX',
                 'VINTAGE HEADS AND TAILS CARD GAME',
-                'VINTAGE SNAP CARDS',]
+                'VINTAGE SNAP CARDS']
 
     item_option1 = st.selectbox("Item number 1:", itm_list, key='item_option1')
     item_option2 = st.selectbox("Item number 2:", itm_list, key='item_option2')
@@ -76,10 +79,10 @@ def main():
     if st.button('Predict'):
         prediction_result_df = recommendation_prediction(input_list)
 
-        if prediction_result_df.shape[0] == 0:
+        if len(input_list) == 0:
             output = 'No recommendation'
         else:
-            output = recommendation_prediction(['STRAWBERRY CERAMIC TRINKET BOX'])['destination'][0]
+            output = recommendation_prediction(input_list)['destination'][0]
 
     st.success(f'Prediction Result: {output}')
 
