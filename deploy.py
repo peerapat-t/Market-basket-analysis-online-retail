@@ -64,7 +64,7 @@ def recommendation_prediction(buy_item_list, final_result_df):
 
 # %%
 def main():
-    st.title('Online retail corss selling system')
+    st.title('Online retail cross selling system')
 
     item_option1 = st.selectbox("Item number 1:", item_list, key='item_option1')
     item_option2 = st.selectbox("Item number 2:", item_list, key='item_option2')
