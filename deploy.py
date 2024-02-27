@@ -26,6 +26,9 @@ final_result_df = final_result_df[['antecedents','consequents','confidence']]
 # %%
 final_item_df = pd.read_excel('item_name_final.xlsx')
 
+# %%
+item_list = sorted(final_item_df['Description'].unique().tolist())
+
 # %% [markdown]
 # # Prediction function
 
@@ -59,8 +62,6 @@ def recommendation_prediction(buy_item_list, final_result_df):
 # %%
 def main():
     st.title('Online retail selling signal')
-
-    item_list = sorted(final_item_df['Description'].unique().tolist())
 
     item_option1 = st.selectbox("Item number 1:", item_list, key='item_option1')
     item_option2 = st.selectbox("Item number 2:", item_list, key='item_option2')
