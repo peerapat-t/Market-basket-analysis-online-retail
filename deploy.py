@@ -66,6 +66,10 @@ def recommendation_prediction(buy_item_list, final_result_df):
 def main():
     st.title('Online retail cross selling system')
 
+    st.write('You can try\
+             1. CHILDRENS GARDEN GLOVES BLUE or\
+             2. STRAWBERRY CERAMIC TRINKET BOX and 60 TEATIME FAIRY CAKE CASES')
+
     item_option1 = st.selectbox("Item number 1:", item_list, key='item_option1')
     item_option2 = st.selectbox("Item number 2:", item_list, key='item_option2')
     item_option3 = st.selectbox("Item number 3:", item_list, key='item_option3')
