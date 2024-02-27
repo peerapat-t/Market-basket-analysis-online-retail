@@ -29,6 +29,9 @@ final_item_df = pd.read_excel('item_name_final.xlsx')
 # %%
 item_list = sorted(final_item_df['Description'].unique().tolist())
 
+# %%
+item_list = ['No item'] + item_list
+
 # %% [markdown]
 # # Prediction function
 
@@ -77,7 +80,7 @@ def main():
     prediction_result_df = []
 
     if st.button('Predict'):
-        prediction_result_df = recommendation_prediction(input_list)
+        prediction_result_df = recommendation_prediction(input_list, final_result_df)
         st.dataframe(prediction_result_df)
 
 # %%
