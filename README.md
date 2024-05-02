@@ -1,6 +1,6 @@
 Methodology:
 
-1. Apiori (from scratch)
+1. Apiori (from scratch/using package)
 2. Streamlit
 
 
