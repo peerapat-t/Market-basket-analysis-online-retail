@@ -4,5 +4,4 @@ Methodology:
 2. Streamlit
 
 
-You can try it here:
-https://market-basket-analysis-online-retail-with-deployment-dkuzsmxuq.streamlit.app
+You can try it here: https://market-basket-analysis-online-retail-with-deployment-dkuzsmxuq.streamlit.app
